@@ -65,7 +65,7 @@ The process was carried out in a Linux virtual machine for demonstration and por
 ![Volume Successfully Created](images/09-volume-created-success.png)
 
 ### 🖼️ Image 10 – Final “Volume Created” Screen
-![Final Volume Created](images/10-final-created-screen.png)
+![Final Volume Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/89aad5cc9b458d51d509e12ba8d629fbda108afa/print-vera.10.arquivo.png)
 
 ### 🖼️ Image 11 – Volume Selection for Mounting
 ![Volume Selection for Mounting](images/11-volume-selection-mount.png)
