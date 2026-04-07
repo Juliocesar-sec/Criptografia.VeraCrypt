@@ -41,7 +41,7 @@ The process was carried out in a Linux virtual machine for demonstration and por
 ![VeraCrypt Main Window](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/003685a990f97c040b3ac38e621fcd5fe376ef42/print-vera.png)
 
 ### 🖼️ Image 2 – Volume Type
-![Volume Type]([images/02-volume-type.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.2.arquivo.png))
+![Volume Type]([https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/1a162cafe558b9ce4eeb4d4250620fb5d00c7c03/print-vera.1.arquivo.png)
 
 ### 🖼️ Image 3 – Container Location
 ![Container Location](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.3.arquivo.png)
