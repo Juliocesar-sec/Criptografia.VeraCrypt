@@ -44,43 +44,43 @@ The process was carried out in a Linux virtual machine for demonstration and por
 ![Volume Type]([https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/1a162cafe558b9ce4eeb4d4250620fb5d00c7c03/print-vera.1.arquivo.png)
 
 ### 🖼️ Image 3 – Container Location
-![Container Location](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.3.arquivo.png)
+![Container Location](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.2.arquivo.png)
 
 ### 🖼️ Image 4 – Encryption Options
-![Encryption Options]([images/04-encryption-options.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.4.arquivo.png))
+![Encryption Options](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.3.arquivo.png)
 
 ### 🖼️ Image 5 – Volume Size
-![Volume Size]([images/05-volume-size.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.5.arquivo.png))
+![Volume Size](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.4.arquivo.png)
 
 ### 🖼️ Image 6 – Volume Password
-![Volume Password](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.6.arquivo.png)
+![Volume Password](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.5.arquivo.png)
 
 ### 🖼️ Image 7 – Volume Formatting
-![Volume Formatting](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.7.arquivo.png)
+![Volume Formatting](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.6.arquivo.png)
 
 ### 🖼️ Image 8 – Overwrite Confirmation and Formatting Process
-![Overwrite Confirmation]([images/08-overwrite-confirmation.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.8.arquivo.png)
+![Overwrite Confirmation](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.7.arquivo.png)
 
 ### 🖼️ Image 9 – Volume Successfully Created
-![Volume Successfully Created]([images/09-volume-created-success.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.9.arquivo.png)
+![Volume Successfully Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.8.arquivo.png)
 
 ### 🖼️ Image 10 – Final “Volume Created” Screen
-![Final Volume Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/89aad5cc9b458d51d509e12ba8d629fbda108afa/print-vera.10.arquivo.png)
+![Final Volume Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.9.arquivo.png)
 
 ### 🖼️ Image 11 – Volume Selection for Mounting
-![Volume Selection for Mounting]([images/11-volume-selection-mount.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.11.arquivo.png)
+![Volume Selection for Mounting]([[images/11-volume-selection-mount.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.10.arquivo.png)
 
 ### 🖼️ Image 12 – Mount Password Entry
-![Mount Password Entry]([images/12-password-authentication.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.12.arquivo.png.png)
+![Mount Password Entry](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.11.arquivo.png)
 
 ### 🖼️ Image 13 – Administrator Privilege Request
-![Administrator Privilege Request](ghttps://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.13.arquivo.png)
+![Administrator Privilege Request](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.12.arquivo.png.png)
 
 ### 🖼️ Image 14 – Volume Mounted Successfully
-![Volume Mounted Successfully]([images/14-mounted-successfully.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/0d0c4163fb1d9e7e1c4d00e9b27f9cf84e414436/print-vera.14.arquivo.png))
+![Volume Mounted Successfully](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.13.arquivo.png)
 
 ### 🖼️ Image 15 – Attempt to Open the Container Directly
-![Attempt to Open Container Directly](images/15-direct-open-attempt.png)
+![Attempt to Open Container Directly]([images/15-direct-open-attempt.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.14.arquivo.png))
 
 ---
 
