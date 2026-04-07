@@ -1,128 +1,144 @@
-# 🔐 Report: Creation and Mounting of an Encrypted Volume with VeraCrypt
+# 🔐 Report: Criação e Montagem de um Volume Criptografado com VeraCrypt
 
 ### 📁 Cybersecurity Portfolio
-
-**Author:** [Your Name]  
-**Date:** April 7, 2026
-
----
-
-## 📌 Introduction
-
-This report documents, in a detailed step-by-step manner, the complete process of **creating, mounting, and functionally validating an encrypted file container** using VeraCrypt in a Linux environment.
-
-The objective is to demonstrate practical knowledge of **data-at-rest encryption**, with emphasis on security best practices, including:
-
-* selection of strong algorithms (**AES-256 + SHA-512**)  
-* generation of a complex password using Proton Pass  
-* proper entropy collection  
-* creation of a standard (non-hidden) container  
-* secure volume mounting  
-* read/write validation  
-* secure file behavior outside the software
-
-The process was carried out in a Linux virtual machine for demonstration and portfolio-building purposes.
+**Autor:** [Seu Nome]  
+**Data:** Abril de 2026
 
 ---
 
-## 🖥️ Environment Used
+## 📌 Introdução
 
-* Linux operating system (XFCE interface)  
-* Tools used:
-  * VeraCrypt
-  * Proton Pass
-  * Thunar (file manager)
+Este relatório documenta, de forma detalhada e passo a passo, o processo completo de **criação, montagem e validação funcional de um container de arquivo criptografado** utilizando o VeraCrypt em ambiente Linux.
 
----
+O objetivo é demonstrar conhecimento prático em **criptografia de dados em repouso (data-at-rest)**, com ênfase em boas práticas de segurança, tais como:
+- Seleção de algoritmos fortes (**AES-256 + SHA-512**)
+- Geração de senha complexa com gerenciador de senhas (Proton Pass)
+- Coleta adequada de entropia durante a formatação
+- Criação de container padrão (não oculto)
+- Montagem segura do volume
+- Validação de leitura e escrita
+- Comportamento seguro do arquivo fora do software
 
-## ⚙️ Step-by-Step Description of the Images
-
-### 🖼️ Image 1 – VeraCrypt Main Window
-![VeraCrypt Main Window](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/003685a990f97c040b3ac38e621fcd5fe376ef42/print-vera.png)
-
-### 🖼️ Image 2 – Volume Type
-![Volume Type]([https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/1a162cafe558b9ce4eeb4d4250620fb5d00c7c03/print-vera.1.arquivo.png)
-
-### 🖼️ Image 3 – Container Location
-![Container Location](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.2.arquivo.png)
-
-### 🖼️ Image 4 – Encryption Options
-![Encryption Options](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.3.arquivo.png)
-
-### 🖼️ Image 5 – Volume Size
-![Volume Size](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.4.arquivo.png)
-
-### 🖼️ Image 6 – Volume Password
-![Volume Password](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.5.arquivo.png)
-
-### 🖼️ Image 7 – Volume Formatting
-![Volume Formatting](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.6.arquivo.png)
-
-### 🖼️ Image 8 – Overwrite Confirmation and Formatting Process
-![Overwrite Confirmation](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.7.arquivo.png)
-
-### 🖼️ Image 9 – Volume Successfully Created
-![Volume Successfully Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.8.arquivo.png)
-
-### 🖼️ Image 10 – Final “Volume Created” Screen
-![Final Volume Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.9.arquivo.png)
-
-### 🖼️ Image 11 – Volume Selection for Mounting
-![Volume Selection for Mounting]([images/11-volume-selection-mount.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.10.arquivo.png)
-
-### 🖼️ Image 12 – Mount Password Entry
-![Mount Password Entry](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.11.arquivo.png)
-
-### 🖼️ Image 13 – Administrator Privilege Request
-![Administrator Privilege Request](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.12.arquivo.png.png)
-
-### 🖼️ Image 14 – Volume Mounted Successfully
-![Volume Mounted Successfully](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.13.arquivo.png)
-
-### 🖼️ Image 15 – Attempt to Open the Container Directly
-![Attempt to Open Container Directly]([images/15-direct-open-attempt.png](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/8a9acdf48d89b947022c0b6a14d7118690195b2f/print-vera.14.arquivo.png))
+O processo foi realizado em uma máquina virtual Linux com o intuito de demonstração e construção de portfólio.
 
 ---
 
-## 🔒 Results Achieved
+## 🖥️ Ambiente Utilizado
 
-* Encrypted volume successfully created  
-* Secure container ready for use  
-* Effective data-at-rest protection  
-* Portable file compatible with multiple systems  
-* Successful mounting and functional validation
-
----
-
-## 🛡️ Security Conclusions and Lessons Learned
-
-This process demonstrates mastery of the following cybersecurity competencies:
-
-* correct VeraCrypt usage  
-* strong encryption deployment (AES-256 + SHA-512)  
-* secure password generation with Proton Pass  
-* understanding of entropy importance  
-* application of operational best practices  
-* use of portable encrypted containers  
-* secure mounting workflow in Linux  
-* safe behavior validation outside the encryption software
+- Sistema operacional: Linux (interface XFCE)
+- Ferramentas utilizadas:
+  - **VeraCrypt** (versão mais recente disponível)
+  - **Proton Pass** (geração de senha)
+  - **Thunar** (gerenciador de arquivos)
 
 ---
 
-## 📚 Final Considerations
+## ⚙️ Descrição Passo a Passo com Explicação das Imagens
 
-The created volume can be mounted on different operating systems (Linux, Windows, and macOS), making it an efficient solution for:
+### 🖼️ Image 1 – Janela Principal do VeraCrypt
+![VeraCrypt Main Window](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.png)  
+A tela inicial do VeraCrypt foi aberta. Cliquei em **"Create Volume"** para iniciar o assistente de criação.
 
-* secure storage of sensitive data  
-* encrypted backups  
-* protection against unauthorized access in case of loss or theft
+### 🖼️ Image 2 – Tipo de Volume
+![Volume Type](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.1.arquivo.png)  
+Escolhi **"Create an encrypted file container"** → **"Standard VeraCrypt volume"**. Optei por um container padrão (não hidden) por ser suficiente para a demonstração de portabilidade e proteção básica.
 
-This type of practice is widely used in corporate environments and represents an essential competency for information security professionals.
+### 🖼️ Image 3 – Localização do Container
+![Container Location](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.2.arquivo.png)  
+Selecionei o local e nomeei o arquivo como `meu-volume-seguro.vc`. O arquivo será um container único e portátil.
+
+### 🖼️ Image 4 – Opções de Criptografia
+![Encryption Options](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.3.arquivo.png)  
+Escolhi **AES-256** como algoritmo de criptografia e **SHA-512** como função hash. Essa combinação oferece excelente segurança e desempenho.
+
+### 🖼️ Image 5 – Tamanho do Volume
+![Volume Size](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.4.arquivo.png)  
+Defini o tamanho em **500 MB** (tamanho suficiente para demonstração).
+
+### 🖼️ Image 6 – Senha do Volume
+![Volume Password](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.5.arquivo.png)  
+Gerei uma senha forte e longa utilizando o **Proton Pass**. A senha contém letras maiúsculas/minúsculas, números e símbolos, com mais de 20 caracteres.
+
+### 🖼️ Image 7 – Formatação do Volume
+![Volume Formatting](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.6.arquivo.png)  
+Na tela de formatação, movi o mouse aleatoriamente por aproximadamente **45 segundos** até o indicador de aleatoriedade ficar verde. Isso coleta entropia suficiente para gerar chaves criptográficas fortes. Escolhi **exFAT** como sistema de arquivos para garantir **compatibilidade cross-platform** (Linux, Windows e macOS).
+
+### 🖼️ Image 8 – Confirmação de Sobrescrita e Processo de Formatação
+![Overwrite Confirmation](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.7.arquivo.png)  
+Confirmei a sobrescrita (o container é criado do zero) e acompanhei o processo de formatação.
+
+### 🖼️ Image 9 – Volume Criado com Sucesso (parte 1)
+![Volume Successfully Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.8.arquivo.png)
+
+### 🖼️ Image 10 – Tela Final “Volume Created”
+![Final Volume Created](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.9.arquivo.png)  
+O volume foi criado com sucesso.
+
+### 🖼️ Image 11 – Seleção do Volume para Montagem
+![Volume Selection for Mounting](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.10.arquivo.png)  
+Selecionei o slot 1 e escolhi o arquivo do container.
+
+### 🖼️ Image 12 – Entrada da Senha para Montagem
+![Mount Password Entry](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.11.arquivo.png)  
+Informe a senha gerada anteriormente.
+
+### 🖼️ Image 13 – Solicitação de Privilégios de Administrador
+![Administrator Privilege Request](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.12.arquivo.png)  
+O sistema solicitou privilégios de administrador (sudo) para montar o volume.
+
+### 🖼️ Image 14 – Volume Montado com Sucesso
+![Volume Mounted Successfully](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.13.arquivo.png)  
+O volume foi montado corretamente e apareceu como um disco removível no Thunar.
+
+### 🖼️ Image 15 – Tentativa de Abrir o Container Diretamente
+![Attempt to Open Container Directly](https://github.com/Juliocesar-sec/Criptografia.VeraCrypt/blob/main/print-vera.14.arquivo.png)  
+Ao tentar abrir o arquivo `.vc` diretamente com o gerenciador de arquivos, o conteúdo aparece como dados binários ilegíveis — comprovando que a criptografia está funcionando.
 
 ---
 
-## 🧰 Tools Used
+## 🔒 Resultados Obtidos
 
-* VeraCrypt  
-* Proton Pass  
-* Linux system (test environment)
+- Volume criptografado criado com sucesso
+- Container portátil e compatível com múltiplos sistemas operacionais
+- Proteção eficaz de dados em repouso
+- Montagem e desmontagem seguras realizadas
+- Validação funcional: copiei arquivos de texto e imagens para dentro do volume, li e modifiquei o conteúdo, desmontei e remontei o volume sem perda de dados
+- Tentativa de acesso direto ao container falhou (dados permanecem criptografados)
+
+---
+
+## 🛡️ Conclusões de Segurança e Lições Aprendidas
+
+Esta prática demonstrou as seguintes competências em cibersegurança:
+
+- Uso correto e completo do VeraCrypt
+- Aplicação de algoritmos criptográficos fortes (AES-256 + SHA-512)
+- Importância da coleta de entropia durante a geração de chaves
+- Escolha consciente de filesystem (**exFAT**) para portabilidade
+- Geração e gerenciamento seguro de senhas
+- Validação prática de que o arquivo container não revela nenhum dado sem a senha correta
+- Boas práticas operacionais: nunca deixar o volume montado desnecessariamente, desmontar após o uso
+
+**Lições principais:**
+- A entropia é crítica para a força das chaves criptográficas — o movimento aleatório do mouse é uma forma simples e eficaz de aumentá-la.
+- Containers VeraCrypt são uma solução excelente para backups seguros e transporte de dados sensíveis.
+- Em ambientes corporativos, essa técnica pode ser combinada com políticas de senha, keyfiles ou hidden volumes para aumentar ainda mais a segurança.
+
+---
+
+## 📚 Considerações Finais
+
+O volume criado pode ser montado em Linux, Windows e macOS sem problemas, tornando-o uma solução eficiente para:
+- Armazenamento seguro de dados sensíveis
+- Backups criptografados
+- Proteção contra acesso não autorizado em caso de perda ou roubo de dispositivo
+
+Essa competência é essencial para profissionais de segurança da informação.
+
+---
+
+## 🧰 Ferramentas Utilizadas
+
+- VeraCrypt
+- Proton Pass
+- Linux (ambiente de teste)
